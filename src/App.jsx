@@ -1,8 +1,13 @@
+import { ArticlesProvider } from "./context/ArticlesProvider";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <>
+      <ArticlesProvider>
+        <p>Hola</p>
+      </ArticlesProvider>
+    </>
+  );
+};
 
-export default App
+export default App;
