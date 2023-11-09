@@ -17,8 +17,12 @@ const ArticlesProvider = ({ children }) => {
     queryAPI();
   }, [category]);
 
+  const changeCategory = (e) => {
+    setCategory(e.target.value);
+  };
+
   return (
-    <ArticlesContext.Provider value={{ category, articles }}>
+    <ArticlesContext.Provider value={{ category, articles, changeCategory }}>
       {children}
     </ArticlesContext.Provider>
   );
