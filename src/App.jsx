@@ -1,6 +1,7 @@
 import { Container, Grid, Typography } from "@mui/material";
 import { ArticlesProvider } from "./context/ArticlesProvider";
 import FormCategory from "./components/FormCategory";
+import Articles from "./components/Articles";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
                 <FormCategory />
               </Grid>
             </Grid>
+            <Articles />
           </header>
         </Container>
       </ArticlesProvider>
